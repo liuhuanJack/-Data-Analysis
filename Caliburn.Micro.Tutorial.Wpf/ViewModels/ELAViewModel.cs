@@ -33,7 +33,9 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
     public class ELAViewModel : Conductor<object>, IHandle<string>, IHandle<List<string[]>>
     {
         public ObservableCollection<RecipeDataList> _recipeData;
-
+        /// <summary>
+        /// 所跑Recipe的数据列表
+        /// </summary>
         public ObservableCollection<RecipeDataList> RecipeData
         {
             get { return _recipeData; }
@@ -43,8 +45,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => RecipeData);
             }
         }
-
-        public ObservableCollection<Node> Nodes { get; set; }
 
         private ObservableCollection<ToolItems> _toolitems;
         /// <summary>
@@ -118,42 +118,14 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             }
         }
 
-        private string _receiveInfo;
-        /// <summary>
-        /// 添加的文件传递过来的数据
-        /// </summary>
-        public string ReceiveInfo
-        {
-            get { return _receiveInfo; }
-            set
-            {
-                if (_receiveInfo != value)
-                {
-                    _receiveInfo = value;
-                    NotifyOfPropertyChange(() => ReceiveInfo);
-                }
-            }
-        }
-
-        private RecipeDataList _selectedRecipe;
-
-        public RecipeDataList SelectedRecipe
-        {
-            get { return _selectedRecipe; }
-            set
-            {
-                _selectedRecipe = value;
-                NotifyOfPropertyChange(() => SelectedRecipe);
-            }
-        }
-
         private readonly IWindowManager _windowManager;
 
         private readonly IEventAggregator _eventAggregator;
-        //public string ReceiveData { get; set; }
 
         private List<string[]> _receiveData;
-
+        /// <summary>
+        /// 获取的csv文件数据
+        /// </summary>
         public List<string[]> ReceiveData
         {
             get { return _receiveData; }
@@ -163,8 +135,11 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => ReceiveData);
             }
         }
-        private string[] _dataList;
 
+        private string[] _dataList;
+        /// <summary>
+        /// 添加文件的参数列表
+        /// </summary>
         public string[] DataList
         {
             get { return _dataList; }
@@ -174,6 +149,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => DataList);
             }
         }
+
         public ObservableCollection<DataListItems> _datalistitems;
         /// <summary>
         /// 参数列表
@@ -187,7 +163,11 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => DataListItems);
             }
         }
+
         private SelectedDataListItems _selectedData;
+        /// <summary>
+        /// 选中的要显示的参数列表
+        /// </summary>
         public SelectedDataListItems SelectedData
         {
             get { return _selectedData; }
@@ -197,8 +177,11 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => SelectedData);
             }
         }
-        private string _filename;
 
+        private string _filename;
+        /// <summary>
+        /// 添加的文件名
+        /// </summary>
         public string FileName
         {
             get { return _filename; }
@@ -214,8 +197,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
         {
             // 初始化数据源
             RecipeData = new ObservableCollection<RecipeDataList>();
-
-            Nodes = new ObservableCollection<Node>();
 
             ToolItems = new ObservableCollection<ToolItems>
             {
@@ -261,9 +242,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             {
                 if (DataListItems[i].IsSelected == true)
                 {
-
-                    //SelectedData.Add(new SelectedDataListItems { Data = DataListItems[i] });
-                    //SelectedData.Add(new SelectedDataListItems { Data});
                     SelectedData.Data.Add(DataListItems[i].Data);
                 }
             }
@@ -286,9 +264,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                     DataListItems.Add(new DataListItems { Data = DataList[i], IsSelected = false });
                 }
                 string searchData = "Chamber.LeakCheckRate";
-                int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);
-
-                
+                int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);                
 
                 string start = ReceiveData[1][0];
                 string end = ReceiveData[ReceiveData.Count - 1][0];
@@ -326,49 +302,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
         {
             return _windowManager.ShowDialogAsync(IoC.Get<LogSummaryViewModel>());
         }
-        public void ShowSelectedItems()
-        {
-            StringBuilder selectedItems = new();
-            foreach (var item in ToolItems)
-            {
-                if (item.IsSelected)
-                {
-                    selectedItems.Append(item.Tool);
-                    selectedItems.Append(", ");
-                }
-            }
-            if (selectedItems.Length > 0)
-            {
-                selectedItems.Length -= 2; // 移除最后的逗号和空格
-                //System.Windows.Forms.MessageBox.Show("Selected Tools: " + selectedItems.ToString());
-                string[] words = selectedItems.ToString().Split(", ");
-                SelectedToolItems = new List<string>(words);
-            }
-            else
-            {
-                System.Windows.Forms.MessageBox.Show("No Tools selected");
-            }
-            selectedItems = new();
-            foreach (var item in ChamberItems)
-            {
-                if (item.IsSelected)
-                {
-                    selectedItems.Append(item.Chamber);
-                    selectedItems.Append(", ");
-                }
-            }
-            if (selectedItems.Length > 0)
-            {
-                selectedItems.Length -= 2; // 移除最后的逗号和空格
-                //System.Windows.Forms.MessageBox.Show("Selected Chambers: " + selectedItems.ToString());
-                string[] words = selectedItems.ToString().Split(", ");
-                SelectedChambers = new List<string>(words);
-            }
-            else
-            {
-                System.Windows.Forms.MessageBox.Show("No Chambers selected");
-            }
-        }
+
         //Recipe数据的列表类定义
         public class RecipeDataList : Screen
         {
@@ -400,153 +334,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             public List<string> Data { get; set; }
         }
 
-        //参数节点的定义
-        public class Node : Screen
-        {
-            private string name;
-            /// <summary>
-            /// 该节点的名称
-            /// </summary>
-            public string Name
-            {
-                get { return name; }
-                set
-                {
-                    name = value;
-                    NotifyOfPropertyChange(() => Name);
-                }
-            }
-            private bool isSelected;
-            /// <summary>
-            /// 该节点是否被选中
-            /// </summary>
-            public bool IsSelected
-            {
-                get { return isSelected; }
-                set
-                {
-                    isSelected = value;
-                    NotifyOfPropertyChange(() => IsSelected);
-                }
-            }
-            private ObservableCollection<Node> children;
-            /// <summary>
-            /// 该节点的子节点
-            /// </summary>
-            public ObservableCollection<Node> Children
-            {
-                get { return children; }
-                set
-                {
-                    children = value;
-                    NotifyOfPropertyChange(() => Children);
-                }
-            }
-
-            private bool _isSearchResult;
-            /// <summary>
-            /// 节点是否在搜索范围
-            /// </summary>
-            public bool IsSearchResult
-            {
-                get { return _isSearchResult; }
-                set
-                {
-                    if (_isSearchResult != value)
-                    {
-                        _isSearchResult = value;
-                        NotifyOfPropertyChange(() => IsSearchResult);
-                    }
-                }
-            }
-        }
-
-        private RecipeDataList _recipe;
-        //实现Query功能，目前主要实现添加数据的功能，未实现根据Chamber和Tool进行Query
-        public void QueryDatasCommand()
-        {
-            Random ran = new();
-
-            for (int j = 0; j < 25; j++)
-            {
-                _recipe = new RecipeDataList
-                {
-                    Index = j,
-                    Visible = (j % 2 == 1),
-                    StartTime = new DateTime(2023, 10, 25, 9, 0, 0),
-                    EndTime = new DateTime(2023, 10, 25, 11, 0, 0),
-                    FileName = $"File {j + 1}",
-                    Tool = "1001",
-                    Chamber = "PM1",
-                    Recipe = "",
-                    LotID = $"Lot {j + 1}",
-                    Slot = ran.Next(1, 30),
-                    //Color = System.Drawing.Color.Blue
-                    Color = new SolidColorBrush(Colors.Red)
-                };
-
-                if (!RecipeData.Any(n => n.FileName == _recipe.FileName))
-                {
-                    RecipeData.Add(_recipe);
-                }
-            }
-
-            //添加根节点
-            Node rootNode = new() { Name = "Chuck" };
-
-            //添加子节点
-            Node childNode1 = new() { Name = "Chuck.Chiller" };
-            Node childNode2 = new() { Name = "Chuck.ChuckDC" };
-            rootNode.Children = new ObservableCollection<Node> { childNode1, childNode2 };
-
-            //添加孙子节点
-            Node grandchildNode1 = new() { Name = "Chuck.Chiller.FeedBack" };
-            Node grandchildNode2 = new() { Name = "Chuck.Chiller.IsOn" };
-            Node grandchildNode3 = new() { Name = "Chuck.Chiller.Online" };
-            childNode1.Children = new ObservableCollection<Node> { grandchildNode1, grandchildNode2, grandchildNode3 };
-
-            //如果节点已存在，就不添加该节点
-            if (!Nodes.Any(n => n.Name == rootNode.Name))
-            {
-                Nodes.Add(rootNode);
-            }
-        }
-
-        public void QueryFilesCommand()
-        {
-            string[]? dataParts = null;
-            /// <summary>
-            /// 判定文件是否为空或是否添加文件；如果没有，就抛出异常，如果有，就将文件数据添加到列表里
-            /// </summary>
-            if (ReceiveInfo != null && ReceiveInfo != "")
-            {
-                dataParts = ReceiveInfo.Split(';');
-                _recipe = new RecipeDataList
-                {
-                    Visible = bool.Parse(dataParts[0]),
-                    StartTime = DateTime.Parse(dataParts[1]),
-                    EndTime = DateTime.Parse(dataParts[2]),
-                    FileName = dataParts[3],
-                    Tool = dataParts[4],
-                    Chamber = dataParts[5],
-                    Recipe = dataParts[6],
-                    LotID = dataParts[7],
-                    Slot = int.Parse(dataParts[8]),
-                    //Color = dataParts[9]
-                };
-                //如果数据重复，就不添加该数据
-                if (!RecipeData.Any(n => n.FileName == _recipe.FileName))
-                {
-                    RecipeData.Add(_recipe);
-                }
-            }
-            else
-            {
-                //处理ReceiveInfo为null的情况
-                System.Windows.Forms.MessageBox.Show("未添加文件", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }
-
         public void SearchCommand()
         {
             if(SearchText != null)
@@ -568,80 +355,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 
         }
 
-        #region 树结构时实现参数搜索功能
-        //遍历节点修改IsSearchResult，新建复制节点，将原节点赋给复制节点，clear掉原节点，添加新节点
-        public void ExecuteEnterCommand()
-        {
-            Traversal(Nodes[0]);
-
-            Node rootNodeCopy = CreateCopyOfNode(Nodes[0]);
-
-            Nodes.Clear();
-
-            if (!Nodes.Any(n => n.Name == rootNodeCopy.Name))
-            {
-                Nodes.Add(rootNodeCopy);
-            }
-        }
-
-        //复制节点
-        public Node CreateCopyOfNode(Node node)
-        {
-            Node newNode = new()
-            {
-                Name = node.Name,
-                IsSelected = node.IsSelected,
-                IsSearchResult = node.IsSearchResult
-            };
-
-            //遍历子节点
-            if (node.Children != null)
-            {
-                newNode.Children = new ObservableCollection<Node>();
-                foreach (var childNode in node.Children)
-                {
-                    Node newChildNode = CreateCopyOfNode(childNode);
-                    newNode.Children.Add(newChildNode);
-                }
-            }
-
-            return newNode;
-        }
-
-        //遍历节点，修改节点的IsSearchResult
-        public void Traversal(Node node)
-        {
-            if (string.IsNullOrEmpty(SearchText))
-            {
-                System.Windows.Forms.MessageBox.Show("搜索内容不能为空", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return;
-            }
-            if (/*string.IsNullOrEmpty(SearchText) || */node.Name.Contains(SearchText))
-            {
-                node.IsSearchResult = true;
-            }
-            else
-            {
-                node.IsSearchResult = false;
-            }
-
-            // 遍历子节点
-            if (node.Children != null)
-            {
-                foreach (var childNode in node.Children)
-                {
-                    Traversal(childNode);
-                }
-            }
-        }
-        #endregion
-
-        //通过此方法，将传递的参数设为string
-        private void ShowReceiveInfo(String msg)
-        {
-            ReceiveInfo += msg;
-        }
-
         public void ChangeColorsCommand(RecipeDataList parameter)
         {
             ColorDialog colorDialog = new();
@@ -655,11 +368,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                     {
                         // 修改颜色
                         recipe.Color = new SolidColorBrush(Color.FromArgb(selectedColor.A, selectedColor.R, selectedColor.G, selectedColor.B));// 新的颜色值
-
-                        // 通知界面更新
-                        //recipe.OnPropertyChanged("Color");
-                        //NotifyOfPropertyChange(() => Color);
-
                     }
                 }
             }

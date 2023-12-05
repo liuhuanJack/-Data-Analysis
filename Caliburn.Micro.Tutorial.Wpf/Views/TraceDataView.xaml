@@ -8,7 +8,7 @@
         d:DataContext="{d:DesignInstance Type=viewmodels:TraceDataViewModel}"
         xmlns:s="http://schemas.abtsoftware.co.uk/scichart"
         mc:Ignorable="d"
-        Height="450" Width="1000">
+        Height="700" Width="1200">
     <UserControl.Resources>
         <Style x:Key="TooltipContainer" TargetType="s:TooltipControl">
             <Setter Property="Template">
@@ -113,16 +113,6 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <ListBox x:Name="Text" Width="250" Height="100" 
-            Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="5,5,5,5">
-                <ListBox.ItemTemplate>
-                    <DataTemplate >
-                        <StackPanel Orientation="Horizontal">
-                            <TextBlock Text="{Binding}" Margin="5,0,0,0"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
         </StackPanel>
         <StackPanel Grid.Row="1" Orientation="Horizontal" Background="#333">
             <CheckBox Margin="5" Foreground="#FFF" Content="Enable Zoom?" IsChecked="{Binding EnableZoom, Mode=TwoWay}"/>
