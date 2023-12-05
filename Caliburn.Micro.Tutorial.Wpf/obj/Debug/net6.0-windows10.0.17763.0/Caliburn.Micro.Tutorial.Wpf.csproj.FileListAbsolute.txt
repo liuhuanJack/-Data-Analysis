@@ -1,0 +1,245 @@
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.exe
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.deps.json
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.runtimeconfig.json
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.Core.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Core.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Xaml.Behaviors.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\WinRT.Runtime.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.AssemblyReference.cache
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.cache
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.lref
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.baml
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.g.resources
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfoInputs.cache
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfo.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CoreCompileInputs.cache
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CopyComplete
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\refint\Caliburn.Micro.Tutorial.Wpf.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.genruntimeconfig.cache
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\ref\Caliburn.Micro.Tutorial.Wpf.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\ControlzEx.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\MahApps.Metro.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\de\MahApps.Metro.resources.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\CommonServiceLocator.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Extras.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Platform.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\System.Windows.Interactivity.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\debian-x64\native\libuv.so
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\fedora-x64\native\libuv.so
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\opensuse-x64\native\libuv.so
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\osx\native\libuv.dylib
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\rhel-x64\native\libuv.so
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-arm\native\libuv.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x64\native\libuv.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x86\native\libuv.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.baml
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.baml
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.baml
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Core.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Data.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Drawing.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting3D.dll
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.g.cs
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.baml
+C:\Users\L0599\source\repos\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Prism.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.exe
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.deps.json
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.runtimeconfig.json
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.Core.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Core.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\CommonServiceLocator.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\ControlzEx.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\MahApps.Metro.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.CSharp.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Xaml.Behaviors.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Extras.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Platform.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\System.Windows.Interactivity.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Prism.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Core.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Data.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Drawing.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting3D.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\de\MahApps.Metro.resources.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\debian-x64\native\libuv.so
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\fedora-x64\native\libuv.so
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\opensuse-x64\native\libuv.so
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\osx\native\libuv.dylib
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\rhel-x64\native\libuv.so
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-arm\native\libuv.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x64\native\libuv.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x86\native\libuv.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Windows.SDK.NET.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\WinRT.Runtime.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.AssemblyReference.cache
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.cache
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.lref
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.baml
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.baml
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.baml
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.baml
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.baml
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.g.resources
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.GeneratedMSBuildEditorConfig.editorconfig
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfoInputs.cache
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfo.cs
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CoreCompileInputs.cache
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CopyComplete
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\refint\Caliburn.Micro.Tutorial.Wpf.dll
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.genruntimeconfig.cache
+F:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\ref\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.exe
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.deps.json
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.runtimeconfig.json
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\CommonServiceLocator.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\ControlzEx.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\MahApps.Metro.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Xaml.Behaviors.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Extras.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Platform.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\System.Windows.Interactivity.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Prism.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Data.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Drawing.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting3D.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\de\MahApps.Metro.resources.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\debian-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\fedora-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\opensuse-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\osx\native\libuv.dylib
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\rhel-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-arm\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x64\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x86\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Windows.SDK.NET.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\WinRT.Runtime.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.AssemblyReference.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.lref
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.g.resources
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.GeneratedMSBuildEditorConfig.editorconfig
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfoInputs.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfo.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CoreCompileInputs.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CopyComplete
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\refint\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.genruntimeconfig.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\ref\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.exe
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.deps.json
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.runtimeconfig.json
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Platform.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\CommonServiceLocator.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\ControlzEx.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\MahApps.Metro.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Xaml.Behaviors.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Extras.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.Platform.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\GalaSoft.MvvmLight.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\System.Windows.Interactivity.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Prism.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Core.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Data.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Drawing.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\SciChart.Charting3D.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\de\MahApps.Metro.resources.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\debian-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\fedora-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\opensuse-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\osx\native\libuv.dylib
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\rhel-x64\native\libuv.so
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-arm\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x64\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\runtimes\win7-x86\native\libuv.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Windows.SDK.NET.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\bin\Debug\net6.0-windows10.0.17763.0\WinRT.Runtime.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.AssemblyReference.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\LogSummaryView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\GeneratedInternalTypeHelper.g.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf_MarkupCompile.lref
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\App.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\AddFileView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\ELAView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Views\TraceDataView.baml
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.g.resources
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.GeneratedMSBuildEditorConfig.editorconfig
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfoInputs.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.AssemblyInfo.cs
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CoreCompileInputs.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.sourcelink.json
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.csproj.CopyComplete
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\refint\Caliburn.Micro.Tutorial.Wpf.dll
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.pdb
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\Caliburn.Micro.Tutorial.Wpf.genruntimeconfig.cache
+D:\Copy Files\Caliburn.Micro.Tutorial.Wpf\-Data-Analysis\Caliburn.Micro.Tutorial.Wpf\obj\Debug\net6.0-windows10.0.17763.0\ref\Caliburn.Micro.Tutorial.Wpf.dll

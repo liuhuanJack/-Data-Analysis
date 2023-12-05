@@ -1,0 +1,319 @@
+﻿<Window x:Class="Caliburn.Micro.Tutorial.Wpf.Views.ELAView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:wpfx="http://schemas.microsoft.con/winfx/2006/xaml/presentation/toolkit/extended"
+        xmlns:micro="http://caliburnmicro.com"
+        xmlns:wfi="clr-namespace:System.Windows.Forms.Integration;assembly=WindowsFormsIntegration"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" 
+        xmlns:viewmodels="clr-namespace:Caliburn.Micro.Tutorial.Wpf.ViewModels"
+        xmlns:local="clr-namespace:Caliburn.Micro.Tutorial.Wpf.ViewModels"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls" xmlns:cal="http://www.caliburnproject.org"
+        d:DataContext="{d:DesignInstance Type=viewmodels:ELAViewModel}"
+        mc:Ignorable="d"
+        Title="ELAView" Height="1080" Width="1920">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#E0E0E0" Offset="0" />
+                    <GradientStop Color="#F0F0F0" Offset="1" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <StackPanel Margin="5,5" Width="290">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Start Time" Width="68" FontFamily="Arial" FontSize="14" VerticalAlignment="Center"/>
+                    <wfi:WindowsFormsHost Margin="7,0,0,0" FontSize="14" FontFamily="Arial" Width="170" Height="22" VerticalAlignment="Center">
+                        <wf:DateTimePicker x:Name="wfTimeFrom" Value="2023-1-1 12:00:00" CustomFormat="yyyy/MM/dd HH:mm:ss" Format="Custom"></wf:DateTimePicker>
+                    </wfi:WindowsFormsHost>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock Text="End Time" Width="70" FontFamily="Arial" FontSize="14" VerticalAlignment="Center"/>
+                    <wfi:WindowsFormsHost Margin="5,0,0,0" FontSize="14" FontFamily="Arial" Width="170" Height="22" VerticalAlignment="Center">
+                        <wf:DateTimePicker x:Name="wfTimeTo" Value="2023-7-1 12:00:00" CustomFormat="yyyy/MM/dd HH:mm:ss" Format="Custom"></wf:DateTimePicker>
+                    </wfi:WindowsFormsHost>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="5,5,5,5">
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <TextBlock Text="Chamber" Width="70" FontFamily="Arial" FontSize="14" VerticalAlignment="Center" Margin="5,5,5,5"/>
+                        <ListBox x:Name="ChamberItems" 
+                            Width="100" Height="100" SelectionMode="Extended"                                                        
+                            Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="5,5,5,5">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate >
+                                    <StackPanel Orientation="Horizontal">
+                                        <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                                        <TextBlock Text="{Binding Chamber}" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox x:Name="SelectedChambers" Width="70" Height="100" 
+                            Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="5,5,5,5">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding}" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5,5,5,5">
+                        <TextBlock Text="Tool" Width="50" FontFamily="Arial" FontSize="14" VerticalAlignment="Center" Margin="25,5,5,5"/>
+                        <ListBox x:Name="ToolItems" 
+                                  Width="100" Height="100" SelectionMode="Extended"                                                        
+                                  Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="5,5,5,5">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate >
+                                    <StackPanel Orientation="Horizontal">
+                                        <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                                        <TextBlock Text="{Binding Tool}" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        <ListBox x:Name="SelectedToolItems" Width="70" Height="100" 
+                                 Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" Margin="5,5,5,5">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate >
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding}" Margin="5,0,0,0"/>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            
+            <StackPanel Margin="0,0,5,0" Orientation="Vertical">
+                <StackPanel.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#E0E0E0" Offset="0" />
+                        <GradientStop Color="#F0F0F0" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Button Content="QueryData" x:Name="QueryDatasCommand" Margin="5,5,5,5" HorizontalAlignment="Right" Height="30" Width="100">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="AddFile" x:Name="AddFile" Margin="5,5,5,5" Height="30" Width="100">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="QueryFile" x:Name="QueryFilesCommand" Margin="5,5,5,5" HorizontalAlignment="Right" Height="30" Width="100">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Log Summary" x:Name="LogSummary" Height="30" Width="100" Margin="5,5,5,5">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Button" x:Name="ShowSelectedItems" Height="30" Width="100" Margin="5,5,5,5">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Show Trace Data" x:Name="DataCommand" Height="30" Width="100" Margin="5,5,5,5">
+                    <Button.Background>
+                        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                            <GradientStop Color="#B3D1F3" Offset="0" />
+                            <GradientStop Color="#80B8E6" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+
+
+        <ScrollViewer Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2">
+            <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5,10,0,0">
+                <TextBlock Text="数据列表" Margin="5" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" />
+                <DataGrid Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5,10,5,0" 
+                AlternationCount="2" ColumnHeaderHeight="30" 
+                AutoGenerateColumns="False"
+                VirtualizingStackPanel.IsVirtualizing="False"
+                 x:Name="RecipeData" SelectedItem="{Binding SelectedRecipe, Mode=TwoWay}"
+                CanUserAddRows="False" CanUserResizeRows="True" CanUserResizeColumns="True" FontFamily="Arial" FontSize="12">
+                    <DataGrid.RowStyle>
+                        <Style TargetType="DataGridRow">
+                            <Setter Property="Background" Value="White" />
+                            <Style.Triggers>
+                                <Trigger Property="ItemsControl.AlternationIndex" Value="1">
+                                    <Setter Property="Background" Value="LightGray" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </DataGrid.RowStyle>
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.HeaderTemplate >
+                                <DataTemplate>
+                                    <TextBlock Text="Visible" FontFamily="Arial" FontSize="12" VerticalAlignment="Bottom" Margin="3,0,0,0" Width="50"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.HeaderTemplate>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <CheckBox IsChecked="{Binding Visible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                                    </CheckBox>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Start Time">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding StartTime}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="End Time">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding EndTime}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="File Name">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding FileName}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Tool">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Tool}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Chamber">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Chamber}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Recipe">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Recipe}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Width="Auto"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="LotID">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding LotID}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Slot">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Slot}" Margin="5,0" FontFamily="Arial" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="Color">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Height="30" Width="100" Background="{Binding Color, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <i:Interaction.Triggers>
+                                            <i:EventTrigger EventName="Click">
+                                                <cal:ActionMessage MethodName="ChangeColorsCommand">
+                                                    <cal:Parameter Value="{Binding}" />
+                                                </cal:ActionMessage>
+                                            </i:EventTrigger>
+                                        </i:Interaction.Triggers>
+                                    </Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Row="1" HorizontalAlignment="Center" Height="200" Width="410">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="参数列表" Margin="5" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" />
+                <ListBox x:Name="DataListItems">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <CheckBox IsChecked="{Binding IsSelected, Mode=TwoWay}"/>
+                                <TextBlock Text="{Binding Data}" Margin="5,0,0,0">
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSearchResult, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Value="True">
+                                                    <Setter Property="Foreground" Value="Red" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+        </ScrollViewer>
+
+
+        <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="5,5,5,5">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#E0E0E0" Offset="0" />
+                    <GradientStop Color="#F0F0F0" Offset="1" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <TextBox Width="100" x:Name="SearchText" Margin="5,5,5,5" VerticalContentAlignment="Center"/>
+
+            <Button Content="Query" x:Name="SearchCommand" HorizontalAlignment="Right" Width="80" Height="30" Margin="5,5,5,5">
+                <Button.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                        <GradientStop Color="#B3D1F3" Offset="0" />
+                        <GradientStop Color="#80B8E6" Offset="1" />
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+        <ContentControl x:Name="ActiveItem" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" Margin="20"/>
+    </Grid>
+</Window>

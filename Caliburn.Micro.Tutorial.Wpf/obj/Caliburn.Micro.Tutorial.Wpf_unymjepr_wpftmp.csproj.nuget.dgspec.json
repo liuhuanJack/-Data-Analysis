@@ -1,0 +1,102 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Copy Files\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf.csproj": {}
+  },
+  "projects": {
+    "D:\\Copy Files\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Copy Files\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf.csproj",
+        "projectName": "Caliburn.Micro.Tutorial.Wpf",
+        "projectPath": "D:\\Copy Files\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf.csproj",
+        "packagesPath": "C:\\Users\\L0599\\.nuget\\packages\\",
+        "outputPath": "D:\\Copy Files\\Caliburn.Micro.Tutorial.Wpf\\Caliburn.Micro.Tutorial.Wpf\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\L0599\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows10.0.17763.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/abtsoftware-bleeding-edge/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0-windows10.0.17763": {
+            "targetAlias": "net6.0-windows10.0.17763.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows10.0.17763": {
+          "targetAlias": "net6.0-windows10.0.17763.0",
+          "dependencies": {
+            "Caliburn.Micro": {
+              "target": "Package",
+              "version": "[4.0.212, )"
+            },
+            "MahApps.Metro": {
+              "target": "Package",
+              "version": "[2.4.10, )"
+            },
+            "MvvmLightLibs": {
+              "target": "Package",
+              "version": "[5.4.1.1, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
+            "SciChart": {
+              "target": "Package",
+              "version": "[6.3.0.13476, )"
+            },
+            "SciChart3D": {
+              "target": "Package",
+              "version": "[6.3.0.13476, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Windows.SDK.NET.Ref",
+              "version": "[10.0.17763.31, 10.0.17763.31]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Windows.SDK.NET.Ref": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
