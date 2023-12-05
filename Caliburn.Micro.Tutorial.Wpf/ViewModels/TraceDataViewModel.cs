@@ -23,8 +23,21 @@ using SciChart.Charting.Visuals;
 
 namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 {
-    public class TraceDataViewModel : Conductor<object>, IHandle<List<string[]>>, IHandle<SelectedDataListItems>
+    public class TraceDataViewModel : Conductor<object>, IHandle<List<string[]>>, IHandle<SelectedDataListItems>, IHandle<ObservableCollection<RecipeDataList>>
     {
+        public ObservableCollection<RecipeDataList> _recipeData;
+        /// <summary>
+        /// 所跑Recipe的数据列表
+        /// </summary>
+        public ObservableCollection<RecipeDataList> RecipeData
+        {
+            get { return _recipeData; }
+            set
+            {
+                _recipeData = value;
+                NotifyOfPropertyChange(() => RecipeData);
+            }
+        }
         private readonly IEventAggregator _eventAggregator;
 
         private List<string[]> _receiveData;
@@ -47,14 +60,14 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => SelectedData);
             }
         }
-        private List<string> _text;
-        public List<string> Text
+        private List<string> _selectedDatas;
+        public List<string> SelectedDatas
         {
-            get { return _text; }
+            get { return _selectedDatas; }
             set
             {
-                _text = value;
-                NotifyOfPropertyChange(() => Text);
+                _selectedDatas = value;
+                NotifyOfPropertyChange(() => SelectedDatas);
             }
         }
         private string _chartTitle = "Hello SciChart World!";
@@ -63,12 +76,14 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 
         private ObservableCollection<IRenderableSeriesViewModel> _renderableSeries;
 
+        List<XyDataSeries<DateTime, double>> dataSeriesList = new List<XyDataSeries<DateTime, double>>();
+
         [Obsolete]
         public TraceDataViewModel(IEventAggregator eventAggregator)
         {
             _eventAggregator = eventAggregator;
             _eventAggregator.Subscribe(this);
-            _renderableSeries = new ObservableCollection<IRenderableSeriesViewModel>();
+            
             SelectedData = new SelectedDataListItems();
         }
         public ObservableCollection<IRenderableSeriesViewModel> RenderableSeries
@@ -140,22 +155,28 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             ReceiveData = message;
             return Task.CompletedTask;
         }
+        public Task HandleAsync(ObservableCollection<RecipeDataList> message, CancellationToken cancellationToken)
+        {
+            RecipeData = message;
+            return Task.CompletedTask;
+        }
 
         public Task HandleAsync(SelectedDataListItems message, CancellationToken cancellationToken)
         {
             SelectedData = message;
-            Text = SelectedData.Data;
+            SelectedDatas = SelectedData.Data;
             List<DateTime> datetime = new List<DateTime>();
             List<string> strings = new List<string>();
+            RenderableSeries = new ObservableCollection<IRenderableSeriesViewModel>();
             strings = ReceiveData.Skip(3).Select(row => row[0]).ToList();
             datetime = strings.Select(s => DateTime.ParseExact(s, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)).ToList();
             List<int> ints = new List<int>();
             int j = 0;
             for (int i = 0; i < ReceiveData[3].Length; i++)
             {
-                if (j < Text.Count)
+                if (j < SelectedDatas.Count)
                 {
-                    if (ReceiveData[2][i] == Text[j])
+                    if (ReceiveData[2][i] == SelectedDatas[j])
                     {
                         ints.Add(i);
                         j++;
@@ -163,13 +184,11 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 }
                 else
                     break;
-
             }
-            List<XyDataSeries<DateTime, double>> dataSeriesList = new List<XyDataSeries<DateTime, double>>();
             j = 0;
-            for (int i = 0; i < Text.Count; i++)
+            for (int i = 0; i < SelectedDatas.Count; i++)
             {
-                var lineData = new XyDataSeries<DateTime, double>() { SeriesName = Text[i] };
+                var lineData = new XyDataSeries<DateTime, double>() { SeriesName = SelectedDatas[i] };
                 bool hasValidData = false;
                 for (int k = 0; k < datetime.Count; k++)
                 {
@@ -180,13 +199,13 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                     }
                 }
                 j++;
-                if (hasValidData && !dataSeriesList.Contains(lineData))
+                if (hasValidData)
                 {
                     dataSeriesList.Add(lineData);
                     RenderableSeries.Add(new LineRenderableSeriesViewModel()
                     {
                         StrokeThickness = 2,
-                        Stroke = Colors.SteelBlue,
+                        Stroke = RecipeData[0].Color.Color,
                         DataSeries = lineData,
                         StyleKey = "LineSeriesStyle"
                     });

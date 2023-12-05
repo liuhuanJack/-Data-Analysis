@@ -224,6 +224,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 
             _eventAggregator = eventAggregator;
             _eventAggregator.Subscribe(this);
+            RecipeData = new ObservableCollection<RecipeDataList> { };
         }
         protected async override void OnViewLoaded(object view)
         {
@@ -263,8 +264,8 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 {
                     DataListItems.Add(new DataListItems { Data = DataList[i], IsSelected = false });
                 }
-                string searchData = "Chamber.LeakCheckRate";
-                int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);                
+                //string searchData = "Chamber.LeakCheckRate";
+                //int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);                
 
                 string start = ReceiveData[1][0];
                 string end = ReceiveData[ReceiveData.Count - 1][0];
@@ -276,13 +277,38 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                     tool = String.Join(", ", SelectedToolItems);
                 DateTime start_time = DateTime.ParseExact(start, "'#Create Date: 'yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
                 DateTime end_time = DateTime.ParseExact(end, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
-                RecipeData = new ObservableCollection<RecipeDataList> { };
-                RecipeData.Add(new RecipeDataList { Index = 1, Visible = false, StartTime = start_time,
+                RecipeData.Add(new RecipeDataList { Index = RecipeData.Count, Visible = false, StartTime = start_time,
                                                     EndTime = end_time, FileName = FileName, Tool = tool, Chamber = chamber, 
                                                     Recipe = "", LotID = "", Slot = 1, Color = new SolidColorBrush(Colors.Red) });
                 RecipeData[0].Color = new SolidColorBrush(Colors.SteelBlue);
+                _eventAggregator.PublishOnUIThreadAsync(RecipeData);
             }
         }
+        public void OnCheckBoxChecked()
+        {
+            bool[] ints = new bool[RecipeData.Count];
+            int i = 0;
+            foreach(RecipeDataList data in RecipeData)
+            {
+                ints[i++] = data.Visible;
+            }
+            string arrayContent = string.Join(", ", ints);
+            System.Windows.Forms.MessageBox.Show(arrayContent, "数组内容", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //if (RecipeData[0].Visible)
+            //{
+            //    System.Windows.Forms.MessageBox.Show("已选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else
+            //{
+            //    System.Windows.Forms.MessageBox.Show("未选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+        }
+        public void OnCheckBoxUnchecked()
+        {
+            System.Windows.Forms.MessageBox.Show("已选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         public Task HandleAsync(string message, CancellationToken cancellationToken)
         {
             FileName = message;
@@ -371,6 +397,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                     }
                 }
             }
+            _eventAggregator.PublishOnUIThreadAsync(RecipeData);
         }
     }
 

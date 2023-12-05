@@ -80,7 +80,6 @@
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-
             <StackPanel Margin="0,0,5,0" Orientation="Vertical">
                 <StackPanel.Background>
                     <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
@@ -119,10 +118,8 @@
             <StackPanel Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5,10,0,0">
                 <TextBlock Text="数据列表" Margin="5" FontSize="16" FontWeight="Bold" VerticalAlignment="Center" />
                 <DataGrid Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Margin="5,10,5,0" 
-                AlternationCount="2" ColumnHeaderHeight="30" 
-                AutoGenerateColumns="False"
-                VirtualizingStackPanel.IsVirtualizing="False"
-                 x:Name="RecipeData" SelectedItem="{Binding SelectedRecipe, Mode=TwoWay}"
+                AlternationCount="2" ColumnHeaderHeight="30" AutoGenerateColumns="False" VirtualizingStackPanel.IsVirtualizing="False"
+                x:Name="RecipeData" SelectedItem="{Binding SelectedRecipe, Mode=TwoWay}"
                 CanUserAddRows="False" CanUserResizeRows="True" CanUserResizeColumns="True" FontFamily="Arial" FontSize="12">
                     <DataGrid.RowStyle>
                         <Style TargetType="DataGridRow">
@@ -143,7 +140,8 @@
                             </DataGridTemplateColumn.HeaderTemplate>
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <CheckBox IsChecked="{Binding Visible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
+                                    <CheckBox IsChecked="{Binding Visible, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                              cal:Message.Attach="[Event Checked] = [Action OnCheckBoxChecked]">
                                     </CheckBox>
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
@@ -207,7 +205,7 @@
                         <DataGridTemplateColumn Header="Color">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <Button Height="30" Width="100" Background="{Binding Color, Mode=TwoWay}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <Button Height="30" Width="100" Background="{Binding Color, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Center" VerticalAlignment="Center">
                                         <i:Interaction.Triggers>
                                             <i:EventTrigger EventName="Click">
                                                 <cal:ActionMessage MethodName="ChangeColorsCommand">
