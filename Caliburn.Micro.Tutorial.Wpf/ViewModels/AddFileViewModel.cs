@@ -42,7 +42,7 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             }
         }
         private readonly IEventAggregator _eventAggregator;
-        public List<string[]> CsvData { get; set; }
+        public Dictionary<string, List<string[]>> CsvData { get; set; }
 
         public string[] newData { get; set; }
         public AddFileViewModel(IEventAggregator eventAggregator)
@@ -55,50 +55,78 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 
         public void SelectFilesCommand()
         {
-            Microsoft.Win32.OpenFileDialog openFileDialog = new();
+            Microsoft.Win32.OpenFileDialog openFileDialog = new()
+            {
+                Multiselect = true
+            };
+            List<string> fileNamesList = new List<string>();
             if (openFileDialog.ShowDialog() == true)
             {
-                string filePath = openFileDialog.FileName;
-                CsvData = ReadCSV(filePath);
-
-                if (CsvData.Count > 2) // 确保第三行存在
+                foreach (string fileName in openFileDialog.FileNames)
                 {
-                    string[] row = CsvData[2];
-                    if (row.Length > 3) // 确保至少有四个数据
-                    {
-                        newData = new string[row.Length - 3];
-                        Array.Copy(row, 3, newData, 0, row.Length - 3);
-                        // 现在newData数组中包含了第四个及以后的数据
-                    }
+                    fileNamesList.Add(fileName);
                 }
-                //FileContent = File.ReadAllText(filePath);
+                CsvData = ReadCSVs(fileNamesList);
                 FileName = Path.GetFileName(openFileDialog.FileName);
             }
+            //if (openFileDialog.ShowDialog() == true)
+            //{
+            //    string filePath = openFileDialog.FileName;
+            //    CsvData = ReadCSVs(filePath);
+            //    //FileContent = File.ReadAllText(filePath);
+            //    FileName = Path.GetFileName(openFileDialog.FileName);
+            //}
         }
-
-        private List<string[]> ReadCSV(string filePath)
+        private Dictionary<string, List<string[]>> ReadCSVs(List<string> filepaths)
         {
-            List<string[]> data = new List<string[]>();
+            Dictionary<string, List<string[]>> allData = new Dictionary<string, List<string[]>>();
 
-            using (TextFieldParser parser = new TextFieldParser(filePath))
+            foreach (var filePath in filepaths)
             {
-                parser.TextFieldType = FieldType.Delimited;
-                parser.SetDelimiters(",");
+                string tableName = Path.GetFileNameWithoutExtension(filePath); // 使用文件名作为表格名称
 
-                while (!parser.EndOfData)
+                using (TextFieldParser parser = new TextFieldParser(filePath))
                 {
-                    string[] fields = parser.ReadFields();
-                    data.Add(fields);
+                    parser.TextFieldType = FieldType.Delimited;
+                    parser.SetDelimiters(",");
+
+                    List<string[]> tableData = new List<string[]>();
+
+                    while (!parser.EndOfData)
+                    {
+                        string[]? fields = parser.ReadFields();
+                        tableData.Add(fields);
+                    }
+
+                    allData.Add(tableName, tableData); // 将表格数据添加到字典中
                 }
             }
 
-            return data;
+            return allData;
         }
+
+        //private List<string[]> ReadCSV(string filePath)
+        //{
+        //    List<string[]> data = new List<string[]>();
+
+        //    using (TextFieldParser parser = new TextFieldParser(filePath))
+        //    {
+        //        parser.TextFieldType = FieldType.Delimited;
+        //        parser.SetDelimiters(",");
+
+        //        while (!parser.EndOfData)
+        //        {
+        //            string[] fields = parser.ReadFields();
+        //            data.Add(fields);
+        //        }
+        //    }
+
+        //    return data;
+        //}
 
         public void AddFilesCommand()
         {
             _eventAggregator.PublishOnUIThreadAsync(CsvData);
-            _eventAggregator.PublishOnUIThreadAsync(FileName);
             //_eventAggregator.PublishOnUIThread(new DataArrayMessage(newData));
             //Messenger.Default.Send<String>(FileContent, "Message");
             MessageBox.Show("已添加文件", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);

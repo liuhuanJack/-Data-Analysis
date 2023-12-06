@@ -20,10 +20,11 @@ using static Caliburn.Micro.Tutorial.Wpf.ViewModels.ELAViewModel;
 using System.Windows.Markup;
 using System.Globalization;
 using SciChart.Charting.Visuals;
+using System.Windows.Forms;
 
 namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 {
-    public class TraceDataViewModel : Conductor<object>, IHandle<List<string[]>>, IHandle<SelectedDataListItems>, IHandle<ObservableCollection<RecipeDataList>>
+    public class TraceDataViewModel : Conductor<object>, IHandle<Dictionary<string, List<string[]>>>, IHandle<SelectedDataListItems>, IHandle<ObservableCollection<RecipeDataList>>
     {
         public ObservableCollection<RecipeDataList> _recipeData;
         /// <summary>
@@ -40,8 +41,8 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
         }
         private readonly IEventAggregator _eventAggregator;
 
-        private List<string[]> _receiveData;
-        public List<string[]> ReceiveData
+        private Dictionary<string, List<string[]>> _receiveData;
+        public Dictionary<string, List<string[]>> ReceiveData
         {
             get { return _receiveData; }
             set
@@ -70,22 +71,23 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 NotifyOfPropertyChange(() => SelectedDatas);
             }
         }
-        private string _chartTitle = "Hello SciChart World!";
+        //private string _chartTitle = "Hello SciChart World!";
         private string _xAxisTitle = "XAxis";
         private string _yAxisTitle = "YAxis";
 
-        private ObservableCollection<IRenderableSeriesViewModel> _renderableSeries;
+        
 
-        List<XyDataSeries<DateTime, double>> dataSeriesList = new List<XyDataSeries<DateTime, double>>();
+        List<XyDataSeries<double, double>> dataSeriesList = new();
 
         [Obsolete]
         public TraceDataViewModel(IEventAggregator eventAggregator)
         {
             _eventAggregator = eventAggregator;
             _eventAggregator.Subscribe(this);
-            
+
             SelectedData = new SelectedDataListItems();
         }
+        private ObservableCollection<IRenderableSeriesViewModel> _renderableSeries;
         public ObservableCollection<IRenderableSeriesViewModel> RenderableSeries
         {
             get { return _renderableSeries; }
@@ -93,15 +95,6 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
             {
                 _renderableSeries = value;
                 NotifyOfPropertyChange(nameof(RenderableSeries));
-            }
-        }
-        public string ChartTitle
-        {
-            get { return _chartTitle; }
-            set
-            {
-                _chartTitle = value;
-                NotifyOfPropertyChange("ChartTitle");
             }
         }
         public string XAxisTitle
@@ -150,7 +143,29 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
                 }
             }
         }
-        public Task HandleAsync(List<string[]> message, CancellationToken cancellationToken)
+        private DateTime _minDate;
+        public DateTime MinDate
+        {
+            get { return _minDate; }
+            set
+            {
+                _minDate = value;
+                NotifyOfPropertyChange(() => MinDate);
+            }
+        }
+
+        private DateTime _maxDate;
+        public DateTime MaxDate
+        {
+            get { return _maxDate; }
+            set
+            {
+                _maxDate = value;
+                NotifyOfPropertyChange(() => MaxDate);
+            }
+        }
+
+        public Task HandleAsync(Dictionary<string, List<string[]>> message, CancellationToken cancellationToken)
         {
             ReceiveData = message;
             return Task.CompletedTask;
@@ -165,53 +180,67 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
         {
             SelectedData = message;
             SelectedDatas = SelectedData.Data;
-            List<DateTime> datetime = new List<DateTime>();
-            List<string> strings = new List<string>();
-            RenderableSeries = new ObservableCollection<IRenderableSeriesViewModel>();
-            strings = ReceiveData.Skip(3).Select(row => row[0]).ToList();
-            datetime = strings.Select(s => DateTime.ParseExact(s, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)).ToList();
-            List<int> ints = new List<int>();
-            int j = 0;
-            for (int i = 0; i < ReceiveData[3].Length; i++)
-            {
-                if (j < SelectedDatas.Count)
-                {
-                    if (ReceiveData[2][i] == SelectedDatas[j])
-                    {
-                        ints.Add(i);
-                        j++;
-                    }
-                }
-                else
-                    break;
-            }
-            j = 0;
-            for (int i = 0; i < SelectedDatas.Count; i++)
-            {
-                var lineData = new XyDataSeries<DateTime, double>() { SeriesName = SelectedDatas[i] };
-                bool hasValidData = false;
-                for (int k = 0; k < datetime.Count; k++)
-                {
-                    if (double.TryParse(ReceiveData[k + 3][ints[j]], out double dataValue))
-                    {
-                        lineData.Append(datetime[k], dataValue);
-                        hasValidData = true;
-                    }
-                }
-                j++;
-                if (hasValidData)
-                {
-                    dataSeriesList.Add(lineData);
-                    RenderableSeries.Add(new LineRenderableSeriesViewModel()
-                    {
-                        StrokeThickness = 2,
-                        Stroke = RecipeData[0].Color.Color,
-                        DataSeries = lineData,
-                        StyleKey = "LineSeriesStyle"
-                    });
-                }
-            }
+            ProcessData();
             return Task.CompletedTask;
+        }
+        public void ProcessData()
+        {
+            RenderableSeries = new ObservableCollection<IRenderableSeriesViewModel>();
+            for (int num = 0; num < ReceiveData.Count; num++)
+            {
+                if (RecipeData[num].Visible)
+                {
+                    List<DateTime> datetime = new();
+                    List<string> strings = new();
+                    List<string[]> TableData = ReceiveData.Values.ElementAt(num);
+                    strings = TableData.Skip(3).Select(row => row[0]).ToList();
+                    datetime = strings.Select(s => DateTime.ParseExact(s, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture)).ToList();
+                    MaxDate = MinDate = datetime[0];
+                    List<int> ints = new();
+                    int j = 0;
+                    for (int i = 0; i < TableData[3].Length; i++)
+                    {
+                        if (j < SelectedDatas.Count)
+                        {
+                            if (TableData[2][i] == SelectedDatas[j])
+                            {
+                                ints.Add(i);
+                                j++;
+                            }
+                        }
+                        else
+                            break;
+                    }
+                    j = 0;
+                    for (int i = 0; i < SelectedDatas.Count; i++)
+                    {
+                        var lineData = new XyDataSeries<double, double>() { SeriesName = SelectedDatas[i] };
+                        bool hasValidData = false;
+                        for (int k = 0; k < datetime.Count; k++)
+                        {
+                            if (double.TryParse(TableData[k + 3][ints[j]], out double dataValue))
+                            {
+                                lineData.Append(k, dataValue);
+                                hasValidData = true;
+                            }
+                        }
+                        j++;
+                        if (hasValidData)
+                        {
+                            dataSeriesList.Add(lineData);
+                            RenderableSeries.Add(new LineRenderableSeriesViewModel()
+                            {
+                                StrokeThickness = 2,
+                                Stroke = RecipeData[num].Color.Color,
+                                DataSeries = lineData,
+                                StyleKey = "LineSeriesStyle"
+                            });
+                        }
+                    }
+                }
+            }
+            System.Windows.Forms.MessageBox.Show(MinDate.ToString("yyyy-MM-dd HH:mm:ss") + " " + MaxDate.ToString("yyyy-MM-dd HH:mm:ss"), "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
         }
     }
 }

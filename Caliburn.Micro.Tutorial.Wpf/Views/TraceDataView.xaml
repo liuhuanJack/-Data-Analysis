@@ -8,8 +8,8 @@
         d:DataContext="{d:DesignInstance Type=viewmodels:TraceDataViewModel}"
         xmlns:s="http://schemas.abtsoftware.co.uk/scichart"
         mc:Ignorable="d"
-        Height="700" Width="1200">
-    <UserControl.Resources>
+        Height="700" Width="1000">
+    <!--<UserControl.Resources>
         <Style x:Key="TooltipContainer" TargetType="s:TooltipControl">
             <Setter Property="Template">
                 <Setter.Value>
@@ -36,7 +36,7 @@
                 </TextBlock>
                 <TextBlock Foreground="White">
                     <Run Text="X-Value: "/>
-                    <!--<Run Text="{Binding FormattedXValue, Mode=OneWay}"/>-->
+                    <Run Text="{Binding FormattedXValue, Mode=OneWay}"/>
                     <Run Text="{Binding FormattedXValue, StringFormat='{}{0:MM/dd/yyyy HH:mm:ss}', Mode=OneWay}"/>
                 </TextBlock>
                 <TextBlock Foreground="White">
@@ -51,7 +51,7 @@
             <Setter Property="s:RolloverModifier.IncludeSeries" Value="True"/>
             <Setter Property="StrokeThickness" Value="2"/>
         </Style>
-    </UserControl.Resources>
+    </UserControl.Resources>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
@@ -119,13 +119,13 @@
             <CheckBox Margin="5" Foreground="#FFF" Content="Enable Pan?" IsChecked="{Binding EnablePan, Mode=TwoWay}" />
         </StackPanel>
 
-        <s:SciChartSurface Grid.Row="2" RenderableSeries="{s:SeriesBinding RenderableSeries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
-                           ChartTitle="{Binding ChartTitle}">
+        <s:SciChartSurface Grid.Row="2" RenderableSeries="{s:SeriesBinding RenderableSeries, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" >
             <s:SciChartSurface.XAxis>
-                <s:DateTimeAxis AxisTitle="{Binding XAxisTitle}"/>
+                <!--<s:DateTimeAxis AxisTitle="{Binding XAxisTitle}"/>-->
+                <s:NumericAxis AxisTitle="{Binding XAxisTitle}"/>
             </s:SciChartSurface.XAxis>
             <s:SciChartSurface.YAxis>
-                <s:NumericAxis AxisTitle="{Binding YAxisTitle}" GrowBy="0.5,0.5"/>
+                <s:NumericAxis AxisTitle="{Binding YAxisTitle}" GrowBy="0.5, 0.6"/>
             </s:SciChartSurface.YAxis>
             <s:SciChartSurface.ChartModifier>
                 <s:ModifierGroup>

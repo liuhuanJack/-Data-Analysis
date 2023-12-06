@@ -30,7 +30,7 @@ using static Caliburn.Micro.Tutorial.Wpf.ViewModels.ELAViewModel;
 
 namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 {
-    public class ELAViewModel : Conductor<object>, IHandle<string>, IHandle<List<string[]>>
+    public class ELAViewModel : Conductor<object>, IHandle<Dictionary<string, List<string[]>>>
     {
         public ObservableCollection<RecipeDataList> _recipeData;
         /// <summary>
@@ -122,11 +122,11 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
 
         private readonly IEventAggregator _eventAggregator;
 
-        private List<string[]> _receiveData;
+        private Dictionary<string, List<string[]>> _receiveData;
         /// <summary>
         /// 获取的csv文件数据
         /// </summary>
-        public List<string[]> ReceiveData
+        public Dictionary<string, List<string[]>> ReceiveData
         {
             get { return _receiveData; }
             set
@@ -250,74 +250,62 @@ namespace Caliburn.Micro.Tutorial.Wpf.ViewModels
         }
         public void ProcessData()
         {
-            if (ReceiveData.Count > 2) // 确保第三行存在
-            {
-                string[] row = ReceiveData[2];
-                if (row.Length > 3) // 确保至少有四个数据
-                {
-                    DataList = new string[row.Length - 3];
-                    Array.Copy(row, 3, DataList, 0, row.Length - 3);
-                    // 现在DataList数组中包含了第四个及以后的数据
-                }
-                DataListItems = new ObservableCollection<DataListItems> { };
-                for(int i = 0; i < DataList.Length; i++)
-                {
-                    DataListItems.Add(new DataListItems { Data = DataList[i], IsSelected = false });
-                }
-                //string searchData = "Chamber.LeakCheckRate";
-                //int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);                
+            List<Color> colorsList = new();
 
-                string start = ReceiveData[1][0];
-                string end = ReceiveData[ReceiveData.Count - 1][0];
-                string? chamber = null;
-                string? tool = null;
-                if(SelectedChambers != null)
-                    chamber = String.Join(", ", SelectedChambers);
-                if(SelectedToolItems != null)
-                    tool = String.Join(", ", SelectedToolItems);
-                DateTime start_time = DateTime.ParseExact(start, "'#Create Date: 'yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
-                DateTime end_time = DateTime.ParseExact(end, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
-                RecipeData.Add(new RecipeDataList { Index = RecipeData.Count, Visible = false, StartTime = start_time,
-                                                    EndTime = end_time, FileName = FileName, Tool = tool, Chamber = chamber, 
-                                                    Recipe = "", LotID = "", Slot = 1, Color = new SolidColorBrush(Colors.Red) });
-                RecipeData[0].Color = new SolidColorBrush(Colors.SteelBlue);
-                _eventAggregator.PublishOnUIThreadAsync(RecipeData);
+            Random random = new Random();
+            for (int i = 0; i < 10; i++)
+            {
+                byte red = (byte)random.Next(256);
+                byte green = (byte)random.Next(256);
+                byte blue = (byte)random.Next(256);
+
+                Color randomColor = Color.FromArgb(255, red, green, blue);
+                colorsList.Add(randomColor);
+            }
+            for (int num = 0; num < ReceiveData.Count; num++)
+            {
+                List<string[]> TableData = ReceiveData.Values.ElementAt(num);
+                if (TableData.Count > 2) // 确保第三行存在
+                {
+                    string[] row = TableData[2];
+                    if (row.Length > 3) // 确保至少有四个数据
+                    {
+                        DataList = new string[row.Length - 3];
+                        Array.Copy(row, 3, DataList, 0, row.Length - 3);
+                        // 现在DataList数组中包含了第四个及以后的数据
+                    }
+                    DataListItems = new ObservableCollection<DataListItems> { };
+                    for (int i = 0; i < DataList.Length; i++)
+                    {
+                        DataListItems.Add(new DataListItems { Data = DataList[i], IsSelected = false });
+                    }
+                    //string searchData = "Chamber.LeakCheckRate";
+                    //int index = DataListItems.ToList().FindIndex(item => item.Data == searchData);                
+
+                    string start = TableData[1][0];
+                    string end = TableData[TableData.Count - 1][0];
+                    string? chamber = null;
+                    string? tool = null;
+                    if (SelectedChambers != null)
+                        chamber = String.Join(", ", SelectedChambers);
+                    if (SelectedToolItems != null)
+                        tool = String.Join(", ", SelectedToolItems);
+                    DateTime start_time = DateTime.ParseExact(start, "'#Create Date: 'yyyy-MM-dd HH:mm:ss", CultureInfo.InvariantCulture);
+                    DateTime end_time = DateTime.ParseExact(end, "'T'yyyy-MM-dd HH:mm:ss.fff", CultureInfo.InvariantCulture);
+                    RecipeData.Add(new RecipeDataList { Index = RecipeData.Count, Visible = false, StartTime = start_time,
+                        EndTime = end_time, FileName = ReceiveData.Keys.ElementAt(num), Tool = tool, Chamber = chamber,
+                        Recipe = "", LotID = "", Slot = 1, Color = new SolidColorBrush(colorsList[num]) });
+                    _eventAggregator.PublishOnUIThreadAsync(RecipeData);
+                }
             }
         }
-        public void OnCheckBoxChecked()
+        public static void OnCheckBoxChecked()
         {
-            bool[] ints = new bool[RecipeData.Count];
-            int i = 0;
-            foreach(RecipeDataList data in RecipeData)
-            {
-                ints[i++] = data.Visible;
-            }
-            string arrayContent = string.Join(", ", ints);
-            System.Windows.Forms.MessageBox.Show(arrayContent, "数组内容", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //if (RecipeData[0].Visible)
-            //{
-            //    System.Windows.Forms.MessageBox.Show("已选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    System.Windows.Forms.MessageBox.Show("未选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
         }
-        public void OnCheckBoxUnchecked()
-        {
-            System.Windows.Forms.MessageBox.Show("已选中", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        public Task HandleAsync(string message, CancellationToken cancellationToken)
-        {
-            FileName = message;
-            ProcessData();
-            return Task.CompletedTask;
-        }
-        public Task HandleAsync(List<string[]> message, CancellationToken cancellationToken)
+        public Task HandleAsync(Dictionary<string, List<string[]>> message, CancellationToken cancellationToken)
         {
             ReceiveData = message;
+            ProcessData();
             return Task.CompletedTask;
         }
         public Task AddFile()
